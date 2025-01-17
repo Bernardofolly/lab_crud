@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca CRUD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Gerenciamento de Biblioteca</h1>
+    </header>
+    <main>
+        <form id="bookForm">
+            <h2>Cadastrar Livro</h2>
+            <input type="text" id="title" placeholder="Título" required>
+            <input type="text" id="author" placeholder="Autor" required>
+            <input type="number" id="year" placeholder="Ano de Publicação" required>
+            <button type="submit">Adicionar Livro</button>
+        </form>
+        <section>
+            <h2>Lista de Livros</h2>
+            <table id="bookTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Título</th>
+                        <th>Autor</th>
+                        <th>Ano</th>
+                        <th>Disponível</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </main>
+    <script src="teste.js"></script>
+</body>
+</html>
